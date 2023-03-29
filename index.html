@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class = "side-bar">
+        <div class = "heading">
+            <strong>
+            To Do List
+        </strong>
+        </div>
+
+        <div class="priority-box">
+            <div class="priority-color c1"  ></div>
+            <div class="priority-color c2" ></div>
+            <div class="priority-color c3" ></div>
+            <div class="priority-color c4" ></div>
+            <div class="priority-color df" style="background-color: black;"></div>
+        </div>
+
+        <div class="tool-box">
+
+            <div class="add">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="remove">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+        </div>
+
+        <div class="delete hide-element">
+            <i class="fa-solid fa-trash" style="color: white"></i>
+        </div>
+
+
+    </div>
+
+    <div class="note-editor">
+        <textarea name="" id="" class="editor-text" cols="30" rows="10" spellcheck="false" placeholder="Enter Your Note Here" ></textarea>
+        <div class="priority-options">
+            <strong>
+            Select Priority
+        </strong>
+
+            <div class="color-options c1" ></div>
+            <div class="color-options c2"></div>
+            <div class="color-options c3"></div>
+            <div class="color-options c4 option-highlight"></div>
+        </div>
+
+        <div class="finalize">
+            <div class="done">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="discard"><i class="fa-solid fa-x"></i></div>
+        </div>
+    </div>
+
+    <div class="all-notes">
+        <!-- <div class="note-box">
+            <div class="note-color" ></div>
+            <div class="note-number">
+                Note #${notes.length}
+            </div>
+            <textarea name="" id="" class="note-content">
+            ${txtArea.value}
+            </textarea>
+            <div class="note-lock">
+                <i class="fa-solid fa-lock" style="color: yellow;"></i>
+                <input type="checkbox" class="hide-element">
+            </div>
+        </div> -->
+    </div>
+
+    <script src="./script.js"></script>
+
+    <p class="credits">
+        Developed By Sumit Kumar <br>
+        AKA Kamui-Shurikens  <br>
+        <a href=""> Github Repository </a>
+    </p>
+
+</body>
+</html>

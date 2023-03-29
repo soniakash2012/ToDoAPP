@@ -1,0 +1,796 @@
+body{
+    background-color: #161853;
+    margin: 0px;
+}
+
+
+.credits{
+    color: peachpuff;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    font-weight: bold;
+    top: 0px;
+    left: 11vw;
+    z-index: 10;
+}
+
+.side-bar{
+    display: inline-block;
+    background-color: #FAEDF0;
+    width: 7vw;
+    position: fixed;
+    height: 100vh;
+}
+.heading{
+    background-color: #EC255A;
+    height: 2em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.priority-color{
+    height: 3vh;
+    width: 5vw;
+    margin: 0.1em;
+    border-radius: 7em;
+}
+
+.c1{
+    background-color: darkred;
+}
+
+.c2{
+    background-color: darkorange;
+}
+
+.c3{
+    background-color: darkblue;
+}
+
+.c4{
+    background-color: lightgray;
+}
+
+.priority-box{
+    height: 20vh;
+    background-color:#949FA6; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 0em;
+    padding: 0.7em;
+    flex-wrap: wrap;
+}
+.tool-box{
+    height: 40vh;
+    background-color: #949FA6;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add, .remove{
+    width: 50%;
+    height: 20%;
+    background-color: darkmagenta;
+    margin: 1em;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    top: 3em;
+    padding: 0.3em;
+}
+
+.add{
+    background-color: darkgreen;
+
+}
+
+.remove{
+    background-color: darkred;
+    position: relative;
+    top: 5vh;
+}
+
+
+.note-editor{
+    position: fixed;
+    left: calc(vw/2);
+    top: calc(50vh - 25vh);
+    left: calc(50vw - 15vw);
+    height: 50vh;
+    width: 34vw;
+    background-color: #2D033B;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px 2px lightslategrey;
+    display: none;
+    z-index: 3;
+}
+.editor-text{
+    background-color: #93BFCF;
+    height: 39.5vh;
+    width: 27.37vw ;
+    font-size: 2em;
+    resize: none;
+    white-space: normal;
+    outline: none;
+}
+.finalize{
+    height: 10vh;
+    display: flex;
+    width: 34.53vw;
+    text-align: center;
+    color: white;
+}
+.done{
+    background-color: darkgreen;
+    padding-top: 0.5em;
+    width: 50%;
+}
+.discard{
+    background-color: darkred;
+    padding-top: 0.5em;
+    width: 50%;
+}
+.color-options{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    border-radius: 100%;
+}
+
+.priority-options{
+    height: 35.2vh;
+    width: 4vw;
+    background-color: #2D033B;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 3em;
+    color: lightgrey;
+}
+
+.all-notes{
+    margin-left: 11vw;
+    padding-top: 4em;
+    padding-right: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.note-box{
+    height: 35vh;
+    width: 25vw;
+    background-color: black;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-color{
+    height: 7%;
+    background-color: red;
+
+}
+
+.note-lock{
+    height: 20%;
+    background-color: black;
+    margin-top: 0px;
+    font-size: 0.4em;
+}
+
+.note-number{
+    height: 10%;
+    background-color: dimgray;
+    font-size: 1em;
+    padding-left: 0.5vw;
+    color: lightgrey;
+}
+
+.option-highlight{
+    border: solid 7px;
+    color: #810CA8;
+}
+
+.note-content{
+    color: white;
+    width: 100%;
+    height: 83%;
+    background-color: black;
+    width: inherit;
+    padding: 0em;
+    border: none;
+    word-wrap: break-word;
+    font-size: 2em;
+    resize: none;
+    white-space: normal;
+    outline: none;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.fa-lock{
+    position: relative;
+    left: 92%;
+    display: inline;
+    top: 20%;
+}
+
+.fa-unlock{
+    position: relative;
+    left: 92%;
+    display: inline;
+    top: 20%;
+}
+
+input[type="checkbox"] {
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+    right: 3%;
+    top: 15%;
+    accent-color: red;
+}
+
+.hide-element{
+    display: none;
+}
+
+.delete{
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    height: 9vh;
+    width: 4vw;
+    border-radius: 100%;
+    position: relative;
+    left: 0.7em;
+    top: 0.5em;
+    border: solid 7px lightslategray;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 2px lightslategray;
+}
+
+.delete{
+    height: 1.7em;
+    width: 1.7em;
+    position: absolute;
+    top: 85vh;
+    left: 1.5vw;
+}
+.fa-trash{
+    font-size: 1.65em;
+    position: relative;
+    left: 0.1em;
+}
+
+@media only screen and (max-width: 320px) {
+    .side-bar{
+        width: 22vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.15em;
+        height: 10vh;
+    }
+
+    .priority-color{
+        width: 10vw;
+    }
+    .tool-box{
+        height: 35vh;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 85vh;
+        left: 1vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 70vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 100vw;
+        left: 0vw;
+    }
+    .editor-text{
+        width: 78.2%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 13%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width : 376px) {
+    .side-bar{
+        width: 17vw;
+    }
+
+    .credits{
+        font-size: 0.8em;
+        left: 20vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.15em;
+        height: 15vh;
+    }
+
+    .priority-color{
+        width: 10vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+
+    .tool-box{
+        height: 35vh;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 85vh;
+        left: 1vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 70vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 100vw;
+        left: 0vw;
+    }
+    .editor-text{
+        width: 78.2%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 13.3%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 377px) and (max-width : 427px) {
+    .side-bar{
+        width: 17vw;
+    }
+
+    .credits{
+        font-size: 0.9em;
+        left: 18vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.15em;
+        height: 13vh;
+    }
+
+    .priority-color{
+        width: 10vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 85vh;
+        left: 2.5vw;
+    }
+    .tool-box{
+        height: 35vh;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 70vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 100vw;
+        left: 0vw;
+    }
+    .editor-text{
+        width: 80.4%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 12%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 427px) and (max-width : 769px) {
+    .side-bar{
+        width: 15vw;
+    }
+
+    .credits{
+        font-size: 0.9em;
+        left: 15vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.2em;
+        height: 10vh;
+    }
+
+    .priority-color{
+        width: 10vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 85vh;
+        left: 2.5vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 50vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 80vw;
+        left: 10vw;
+    }
+    .editor-text{
+        width: 80.4%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 11%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width : 1025px) {
+    .side-bar{
+        width: 10vw;
+    }
+
+    .credits{
+        font-size: 1em;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.5em;
+        height: 12vh;
+    }
+
+    .priority-color{
+        width: 7vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 90vh;
+        left: 2.5vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 30vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 60vw;
+        left: 20vw;
+    }
+    .editor-text{
+        width: 80%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 14%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100vw;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    .side-bar{
+        width: 10vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.5em;
+        height: 12vh;
+    }
+
+    .priority-color{
+        width: 8vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 90vh;
+        left: 2.5vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 25vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 40vw;
+    }
+    .editor-text{
+        width: 33vw;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 4.25vw;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100vw;
+    }
+}
+
+
+@media only screen and (max-width : 330px) {
+    .side-bar{
+        width: 23vw;
+    }
+    .credits{
+        font-size: 0.8em;
+        left: 23vw;
+    }
+
+    .heading{
+        color: white;
+        font-size: 1.2em;
+        height: 12vh;
+    }
+
+    .priority-color{
+        width: 14vw;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+    .fa-plus{
+        position: relative;
+        right: 0.05em;
+        top: 0.05em
+    }
+    .remove{
+        font-size: 0.8em;
+    }
+    .fa-x{
+        position: relative;
+        top: 0.07em;
+    }
+    .remove-icon{
+        position: relative;
+        right: 0.5em;
+    }
+    .delete{
+        height: 1.7em;
+        width: 1.7em;
+        position: absolute;
+        top: 85vh;
+        left: 2.5vw;
+    }
+    .fa-trash{
+        font-size: 1.6em;
+    }
+    .note-box{
+        width: 65vw;
+        position: relative;
+        height: 35vh;
+        left: 3vw;
+    }
+    .note-editor{
+        width: 100vw;
+    }
+    .editor-text{
+        width: 75%;
+    }
+
+    .priority-options{
+        height: 36.6vh;
+        width: 13%;
+        font-size: 0.7em;
+    }
+    .finalize{
+        width: 100vw;
+    }
+}
