@@ -14,6 +14,7 @@ if( localStorage.getItem("newNoteID") == null)
 
 let colorPallete = ["darkred", "darkorange", "darkblue", "lightgray"]
 
+const GITHUB_KEY = "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"
 
 //regenerating saved notes
 
